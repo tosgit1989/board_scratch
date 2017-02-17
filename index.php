@@ -8,6 +8,8 @@ $articles = $dataConnect->getAll();
 
 <!-- ヘッダー -->
 トップページ
+
+<!-- コンテンツ -->
 <?php
 foreach ($articles as $article) {
     echo $article['title'];
@@ -17,8 +19,6 @@ foreach ($articles as $article) {
     echo $article['updated_at'];
 }
 ?>
-
-<!-- コンテンツ -->
 
 
 <!-- フッター -->
