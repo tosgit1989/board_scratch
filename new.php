@@ -10,7 +10,7 @@ $ArticleId = $methods->getArticleId($_SERVER['REQUEST_URI']);
 記事の新規作成
 
 <!-- コンテンツ -->
-<form method="POST" action="exec.php/<?php echo $ArticleId ?>">
+<form method="POST" action="/exec.php/<?php echo $ArticleId ?>">
     <div class="form-group">
         <label for="posted_by"><strong>投稿者</strong></label>
         <input required="required" class="form-control" placeholder="投稿者を入力" name="posted_by" id="posted_by" type="text"><br>
