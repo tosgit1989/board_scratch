@@ -18,5 +18,39 @@ class DataHandler {
         $query->execute();
         return $query->fetchAll();
     }
+
+    // insert($data, $TableName)
+    public function insert($data, $TableName) {
+        $pdo = $this->getPdo();
+        $res = $this->getKeysAndValsStrings($data);
+        $prepareText = 'INSERT INTO ' . $TableName . ' (' . $res['key'] . ') VALUES (' . $res['val'] . ')';
+        $query = $pdo->prepare($prepareText);
+        $query->execute();
+    }
+
+    // getKeyAndValsStrings($data)
+    protected function getKeysAndValsStrings($data) {
+        $Keys = [];
+        $Vals = [];
+        foreach ($data as $aKey => $aVal) {
+            $Keys[] = $aKey;
+            $Vals[] = $aVal;
+        }
+        $KeysString = implode(',', $Keys);
+        $ValsString = '';
+        foreach ($Vals as $bKey => $aVal) {
+            if (!is_numeric($aVal)) {
+                $aVal = "'" . $aVal . "'";
+            }
+            if ($bKey > 0) {
+                $ValsString .= ', ';
+            }
+            $ValsString .= $aVal;
+        }
+        return [
+            'val' => $ValsString,
+            'key' => $KeysString,
+        ];
+    }
 }
 ?>

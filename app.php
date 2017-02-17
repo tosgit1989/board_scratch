@@ -2,4 +2,5 @@
 require_once ('src/Services/DataHandler.php');
 require_once ('src/Services/Methods.php');
 $dataConnect = new \Services\DataHandler();
+$methods = new \Services\Methods();
 ?>
