@@ -8,6 +8,7 @@ $articles = $dataConnect->getAll();
 
 <!-- ヘッダー -->
 トップページ
+<a href="new.php">記事を新規作成する</a>
 
 <!-- コンテンツ -->
 <?php
