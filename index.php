@@ -18,6 +18,7 @@ foreach ($articles as $article) {
     echo $article['posted_by'];
     echo $article['created_at'];
     echo $article['updated_at'];
+    echo sprintf('<a href="edit.php/%s">編集</a>', $article['id']);
 }
 ?>
 
