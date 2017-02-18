@@ -21,5 +21,8 @@ if ($_POST['exectype'] == 'new') {
     $article['updated_at'] = $now = date('Y/m/d H:i:s');
     $dataConnect->update($article, ['id' => $ArticleId], 'articles');
     header('Location: ../');
+} elseif ($_POST['exectype'] == 'delete') {
+    $dataConnect->delete(['id' => $ArticleId], 'articles');
+    header('Location: ../');
 }
 ?>

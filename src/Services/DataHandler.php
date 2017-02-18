@@ -47,6 +47,16 @@ class DataHandler {
         $query = $pdo->prepare($prepareText);
         $query->execute();
     }
+
+    // delete($identifier, $TableName)
+    public function delete($identifier, $TableName) {
+        $pdo = $this->getPdo();
+        $identifierStr = $this->getUpdateParameterStrings($identifier, true);
+        $prepareText = 'DELETE FROM ' . $TableName . ' WHERE ' . $identifierStr;
+        $query = $pdo->prepare($prepareText);
+        $query->execute();
+    }
+    
     // getKeyAndValsStrings($data)
     protected function getKeysAndValsStrings($data) {
         $Keys = [];
