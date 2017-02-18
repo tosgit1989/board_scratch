@@ -19,7 +19,6 @@ $articles = $dataConnect->getAll();
 <div class="page-title">
     <p class="page-title-text">トップページ</p>
 </div>
-<a href="new.php">記事を新規作成する</a>
 <div class="main-contents">
 
     <div class="container">
@@ -27,6 +26,7 @@ $articles = $dataConnect->getAll();
             <div class="col-xs-12">
                 <div class="bs-docs-section">
 
+                    <div><a href="new.php" class="btn btn-primary" style="position: fixed; top: 66px; right: 16px">記事を新規作成する</a></div>
                     <?php
                     if (count($articles) >= 1) {
                         foreach ($articles as $article) {
