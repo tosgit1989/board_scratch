@@ -14,10 +14,12 @@ $articles = $dataConnect->getAll();
         </div>
     </div>
 </nav>
-トップページ
 <a href="new.php">記事を新規作成する</a>
 
 <!-- コンテンツ -->
+<div class="page-title">
+    <p class="page-title-text">トップページ</p>
+</div>
 <div class="contents">
     <?php
     foreach ($articles as $article) {

@@ -14,9 +14,11 @@ $ArticleId = $methods->getArticleId($_SERVER['REQUEST_URI']);
         </div>
     </div>
 </nav>
-記事の新規作成
 
 <!-- コンテンツ -->
+<div class="page-title">
+    <p class="page-title-text">記事の新規作成</p>
+</div>
 <div class="contents">
     <form method="POST" action="/exec.php/<?php echo $ArticleId ?>">
         <div class="form-group">

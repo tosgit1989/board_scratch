@@ -14,9 +14,11 @@ $ArticleId = $methods->getArticleId($_SERVER['REQUEST_URI']);
         </div>
     </div>
 </nav>
-記事の削除
 
 <!-- コンテンツ -->
+<div class="page-title">
+    <p class="page-title-text">記事の削除</p>
+</div>
 <div class="contents">
     <?php
     echo $article['title'];

@@ -15,9 +15,11 @@ $article = $dataConnect->getById($ArticleId, 'articles');
         </div>
     </div>
 </nav>
-記事の編集
 
 <!-- コンテンツ -->
+<div class="page-title">
+    <p class="page-title-text">記事の編集</p>
+</div>
 <div class="contents">
     <form method="POST" action="/exec.php/<?php echo $ArticleId ?>">
         <div class="form-group">
