@@ -20,7 +20,7 @@ $articles = $dataConnect->getAll();
     <p class="page-title-text">トップページ</p>
 </div>
 <a href="new.php">記事を新規作成する</a>
-<div class="contents">
+<div class="main-contents">
 
     <div class="container">
         <div class="row">
@@ -44,7 +44,7 @@ $articles = $dataConnect->getAll();
         </div>
     </div><!--/container-->
 
-</div><!--/contents-->
+</div><!--/main-contents-->
 
 <!-- フッター -->
 <footer class="bs-docs-footer">

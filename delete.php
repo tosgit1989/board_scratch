@@ -19,7 +19,7 @@ $ArticleId = $methods->getArticleId($_SERVER['REQUEST_URI']);
 <div class="page-title">
     <p class="page-title-text">記事の削除</p>
 </div>
-<div class="contents">
+<div class="main-contents">
 
     <div class="container">
         <div class="row">
@@ -46,7 +46,7 @@ $ArticleId = $methods->getArticleId($_SERVER['REQUEST_URI']);
         </div>
     </div><!--/container-->
 
-</div><!--/contents-->
+</div><!--/main-contents-->
 
 <!-- フッター -->
 <footer class="bs-docs-footer">

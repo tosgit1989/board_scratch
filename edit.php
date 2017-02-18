@@ -20,7 +20,7 @@ $article = $dataConnect->getById($ArticleId, 'articles');
 <div class="page-title">
     <p class="page-title-text">記事の編集</p>
 </div>
-<div class="contents">
+<div class="main-contents">
 
     <div class="container">
         <div class="row">
@@ -45,7 +45,7 @@ $article = $dataConnect->getById($ArticleId, 'articles');
         </div>
     </div><!--/container-->
 
-</div><!--/contents-->
+</div><!--/main-contents-->
 
 <!-- フッター -->
 <footer class="bs-docs-footer">
