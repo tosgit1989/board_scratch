@@ -8,6 +8,13 @@ $article = $dataConnect->getById($ArticleId, 'articles');
 <body>
 
 <!-- ヘッダー -->
+<nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="active navbar-brand" href="/">board</a>
+        </div>
+    </div>
+</nav>
 記事の編集
 
 <!-- コンテンツ -->

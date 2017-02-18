@@ -7,6 +7,13 @@ $articles = $dataConnect->getAll();
 <body>
 
 <!-- ヘッダー -->
+<nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="active navbar-brand" href="/">board</a>
+        </div>
+    </div>
+</nav>
 トップページ
 <a href="new.php">記事を新規作成する</a>
 
