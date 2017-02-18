@@ -20,21 +20,33 @@ $ArticleId = $methods->getArticleId($_SERVER['REQUEST_URI']);
     <p class="page-title-text">記事の削除</p>
 </div>
 <div class="contents">
-    <?php
-    echo $article['title'];
-    echo $article['comment'];
-    echo $article['posted_by'];
-    echo $article['created_at'];
-    echo $article['updated_at'];
-    ?>
-    <p>本当に削除しますか？</p>
-    <form method="POST" action="/exec.php/<?php echo $ArticleId ?>">
-        <div class="form-group">
-            <input class="form-control" name="exectype" type="hidden" value="delete">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="bs-docs-section">
+
+                    <?php
+                    echo $article['title'];
+                    echo $article['comment'];
+                    echo $article['posted_by'];
+                    echo $article['created_at'];
+                    echo $article['updated_at'];
+                    ?>
+                    <p>本当に削除しますか？</p>
+                    <form method="POST" action="/exec.php/<?php echo $ArticleId ?>">
+                        <div class="form-group">
+                            <input class="form-control" name="exectype" type="hidden" value="delete">
+                        </div>
+                        <button type="submit">はい</button>
+                    </form>
+
+                </div>
+            </div>
         </div>
-        <button type="submit">はい</button>
-    </form>
-</div>
+    </div><!--/container-->
+
+</div><!--/contents-->
 
 <!-- フッター -->
 <footer class="bs-docs-footer">
