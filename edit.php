@@ -32,7 +32,11 @@ $article = $dataConnect->getById($ArticleId, 'articles');
 </form>
 
 <!-- フッター -->
-
+<footer class="bs-docs-footer" style="background-color: #000000; height: 30px">
+    <div class="container">
+        <p class="text-muted"></p>
+    </div>
+</footer>
 
 </body>
 </html>
