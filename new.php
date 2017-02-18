@@ -36,7 +36,7 @@ $ArticleId = $methods->getArticleId($_SERVER['REQUEST_URI']);
                             <input required="required" class="form-control" placeholder="コメントを入力" name="comment" id="comment" type="text"><br>
                             <input class="form-control" name="exectype" type="hidden" value="new">
                         </div>
-                        <button type="submit">投稿する</button>
+                        <button type="submit" class="btn btn-primary">投稿する</button>
                     </form>
 
                 </div>

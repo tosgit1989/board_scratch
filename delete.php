@@ -38,7 +38,7 @@ $ArticleId = $methods->getArticleId($_SERVER['REQUEST_URI']);
                         <div class="form-group">
                             <input class="form-control" name="exectype" type="hidden" value="delete">
                         </div>
-                        <button type="submit">はい</button>
+                        <button type="submit" class="btn btn-danger">はい</button>
                     </form>
 
                 </div>

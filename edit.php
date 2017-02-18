@@ -37,7 +37,7 @@ $article = $dataConnect->getById($ArticleId, 'articles');
                             <input required="required" class="form-control" placeholder="コメントを入力" name="comment" id="comment" type="text" value="<?php echo $article['comment'] ?>"><br>
                             <input class="form-control" name="exectype" type="hidden" value="edit">
                         </div>
-                        <button type="submit">更新する</button>
+                        <button type="submit" class="btn btn-primary">更新する</button>
                     </form>
 
                 </div>
