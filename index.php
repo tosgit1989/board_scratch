@@ -3,7 +3,6 @@ require_once ('app.php');
 $articles = $dataConnect->getAll();
 ?>
 
-<html>
 <body>
 
 <!-- ヘッダー -->
@@ -64,4 +63,3 @@ $articles = $dataConnect->getAll();
 </footer>
 
 </body>
-</html>

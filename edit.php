@@ -4,7 +4,6 @@ $ArticleId = $methods->getArticleId($_SERVER['REQUEST_URI']);
 $article = $dataConnect->getById($ArticleId, 'articles');
 ?>
 
-<html>
 <body>
 
 <!-- ヘッダー -->
@@ -55,4 +54,3 @@ $article = $dataConnect->getById($ArticleId, 'articles');
 </footer>
 
 </body>
-</html>
