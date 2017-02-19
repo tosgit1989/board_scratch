@@ -11,5 +11,21 @@ $methods = new \Services\Methods();
 </head>
 <body>
 
+<!-- ヘッダー -->
+<nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="active navbar-brand" href="/">board</a>
+        </div>
+    </div>
+</nav>
+
+<!-- フッター -->
+<footer class="bs-docs-footer">
+    <div class="container">
+        <p class="text-muted"></p>
+    </div>
+</footer>
+
 </body>
 </html>
