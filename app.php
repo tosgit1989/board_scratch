@@ -1,9 +1,5 @@
 <?php
-require_once ('src/Services/DataHandler.php');
-require_once ('src/Services/Methods.php');
 require_once ('var.php');
-$dataConnect = new \Services\DataHandler();
-$methods = new \Services\Methods();
 ?>
 <html>
 <head>

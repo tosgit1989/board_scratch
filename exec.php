@@ -1,6 +1,5 @@
 <?php
 require_once ('app.php');
-$ArticleId = $methods->getArticleId($_SERVER['REQUEST_URI']);
 
 if ($_POST['exectype'] == 'new') {
     // 記事の新規作成時

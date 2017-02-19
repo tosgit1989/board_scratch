@@ -1,6 +1,5 @@
 <?php
 require_once ('app.php');
-$articles = $dataConnect->getAll();
 ?>
 
 <!-- コンテンツ -->
