@@ -34,6 +34,7 @@ require_once ('app.php');
                             <input class="form-control" name="exectype" type="hidden" value="delete">
                         </div>
                         <button type="submit" class="btn btn-danger">はい</button>
+                        <a href="/" class="btn btn-cancel">いいえ</a>
                     </form>
 
                 </div>

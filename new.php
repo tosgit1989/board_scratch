@@ -24,6 +24,7 @@ require_once ('app.php');
                             <input class="form-control" name="exectype" type="hidden" value="new">
                         </div>
                         <button type="submit" class="btn btn-primary">投稿する</button>
+                        <a href="/" class="btn btn-cancel">キャンセル</a>
                     </form>
 
                 </div>
