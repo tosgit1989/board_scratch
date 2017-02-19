@@ -21,7 +21,7 @@ $methods = new \Services\Methods();
 </nav>
 
 <!-- フッター -->
-<footer class="bs-docs-footer">
+<footer class="bs-docs-footer navbar-fixed-bottom">
     <div class="container">
         <p class="text-muted"></p>
     </div>
