@@ -4,8 +4,6 @@ $ArticleId = $methods->getArticleId($_SERVER['REQUEST_URI']);
 $article = $dataConnect->getById($ArticleId, 'articles');
 ?>
 
-<body>
-
 <!-- ヘッダー -->
 <nav class="navbar navbar-fixed-top navbar-inverse">
     <div class="container-fluid">
@@ -52,5 +50,3 @@ $article = $dataConnect->getById($ArticleId, 'articles');
         <p class="text-muted"></p>
     </div>
 </footer>
-
-</body>

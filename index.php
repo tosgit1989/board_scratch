@@ -3,8 +3,6 @@ require_once ('app.php');
 $articles = $dataConnect->getAll();
 ?>
 
-<body>
-
 <!-- ヘッダー -->
 <nav class="navbar navbar-fixed-top navbar-inverse">
     <div class="container-fluid">
@@ -61,5 +59,3 @@ $articles = $dataConnect->getAll();
         <p class="text-muted"></p>
     </div>
 </footer>
-
-</body>

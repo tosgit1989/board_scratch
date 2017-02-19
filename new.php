@@ -3,8 +3,6 @@ require_once ('app.php');
 $ArticleId = $methods->getArticleId($_SERVER['REQUEST_URI']);
 ?>
 
-<body>
-
 <!-- ヘッダー -->
 <nav class="navbar navbar-fixed-top navbar-inverse">
     <div class="container-fluid">
@@ -51,5 +49,3 @@ $ArticleId = $methods->getArticleId($_SERVER['REQUEST_URI']);
         <p class="text-muted"></p>
     </div>
 </footer>
-
-</body>
