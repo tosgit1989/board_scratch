@@ -14,6 +14,7 @@ body {
 }
 .main-contents {
     min-height: calc(100vh - 30px);
+    padding-bottom: 30px;
 }
 .bs-docs-footer {
     background-color: #000000;
