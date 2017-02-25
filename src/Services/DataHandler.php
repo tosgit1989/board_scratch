@@ -56,44 +56,44 @@ class DataHandler {
         $query = $pdo->prepare($prepareText);
         $query->execute();
     }
-    
+
     // getKeyAndValsStrings($data)
     protected function getKeysAndValsStrings($data) {
-        $Keys = [];
-        $Vals = [];
-        foreach ($data as $aKey => $aVal) {
-            $Keys[] = $aKey;
-            $Vals[] = $aVal;
+        $keys = [];
+        $vals = [];
+        foreach ($data as $key => $val) {
+            $keys[] = $key;
+            $vals[] = $val;
         }
-        $KeysString = implode(',', $Keys);
-        $ValsString = '';
-        foreach ($Vals as $bKey => $aVal) {
-            if (!is_numeric($aVal)) {
-                $aVal = "'" . $aVal . "'";
+        $keysString = implode(',', $keys);
+        $valsString = '';
+        foreach ($vals as $bKey => $val) {
+            if (!is_numeric($val)) {
+                $val = "'" . $val . "'";
             }
             if ($bKey > 0) {
-                $ValsString .= ', ';
+                $valsString .= ', ';
             }
-            $ValsString .= $aVal;
+            $valsString .= $val;
         }
         return [
-            'val' => $ValsString,
-            'key' => $KeysString,
+            'val' => $valsString,
+            'key' => $keysString,
         ];
     }
 
     // getUpdateParameterStrings($data, $isIdentify = false)
     protected function getUpdateParameterStrings($data, $isIdentify = false) {
-        $Keys = [];
-        $Vals = [];
-        foreach ($data as $aKey => $aVal) {
-            $Keys[] = $aKey;
-            $Vals[] = $aVal;
+        $keys = [];
+        $vals = [];
+        foreach ($data as $key => $val) {
+            $keys[] = $key;
+            $vals[] = $val;
         }
         $updateString = '';
-        foreach ($Vals as $k => $aVal) {
-            if (!is_numeric($aVal)) {
-                $aVal = "'" . $aVal . "'";
+        foreach ($vals as $k => $val) {
+            if (!is_numeric($val)) {
+                $val = "'" . $val . "'";
             }
             if ($k > 0) {
                 $updateString .= ', ';
@@ -101,7 +101,7 @@ class DataHandler {
                     $updateString .= ' and ';
                 }
             }
-            $updateString .= sprintf('%s=%s', $Keys[$k], $aVal);
+            $updateString .= sprintf('%s=%s', $keys[$k], $val);
         }
         return $updateString;
     }
