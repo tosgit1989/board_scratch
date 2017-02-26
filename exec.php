@@ -16,10 +16,10 @@ if ($_POST['exectype'] == 'new') {
     $articleUpd['comment'] = $_POST['comment'];
     $articleUpd['posted_by'] = $_POST['posted_by'];
     $articleUpd['updated_at'] = $now = date('Y/m/d H:i:s');
-    $dataConnect->update($articleUpd, ['id' => $ArticleId], 'articles');
+    $dataConnect->update($articleUpd, ['id' => $articleId], 'articles');
     header('Location: ../');
 } elseif ($_POST['exectype'] == 'delete') {
-    $dataConnect->delete(['id' => $ArticleId], 'articles');
+    $dataConnect->delete(['id' => $articleId], 'articles');
     header('Location: ../');
 }
 ?>

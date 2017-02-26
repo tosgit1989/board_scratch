@@ -29,7 +29,7 @@ require_once ('app.php');
                     echo '</div>';
                     ?>
                     <p>本当に削除しますか？</p>
-                    <form method="POST" action="/exec.php/<?php echo $ArticleId ?>">
+                    <form method="POST" action="/exec.php/<?php echo $articleId ?>">
                         <div class="form-group">
                             <input class="form-control" name="exectype" type="hidden" value="delete">
                         </div>

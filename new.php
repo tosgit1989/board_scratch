@@ -13,7 +13,7 @@ require_once ('app.php');
             <div class="col-xs-12">
                 <div class="bs-docs-section">
 
-                    <form method="POST" action="/exec.php/<?php echo $ArticleId ?>">
+                    <form method="POST" action="/exec.php/<?php echo $articleId ?>">
                         <div class="form-group">
                             <label for="posted_by"><strong>投稿者</strong></label>
                             <input required="required" class="form-control" placeholder="投稿者を入力" name="posted_by" id="posted_by" type="text"><br>

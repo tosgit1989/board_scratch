@@ -1,8 +1,8 @@
 <?php
 namespace Services;
 class Methods {
-    // getArticleId($reqURL)
-    public function getArticleId($reqURL) {
+    // getarticleId($reqURL)
+    public function getarticleId($reqURL) {
         $id = null;
         if ($reqURL == "/new.php") {
             $id = 'new';
