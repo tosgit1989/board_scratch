@@ -19,39 +19,39 @@ class DataHandler {
         return $query->fetchAll();
     }
 
-    // getById($Id, $TableName)
-    public function getById($Id, $TableName) {
+    // getById($Id, $tableName)
+    public function getById($Id, $tableName) {
         $pdo = $this->getPdo();
-        $prepareText = 'SELECT * FROM ' . $TableName . ' WHERE id = :id';
+        $prepareText = 'SELECT * FROM ' . $tableName . ' WHERE id = :id';
         $query = $pdo->prepare($prepareText);
         $query->execute(['id' => $Id]);
         return $query->fetch();
     }
 
-    // insert($data, $TableName)
-    public function insert($data, $TableName) {
+    // insert($data, $tableName)
+    public function insert($data, $tableName) {
         $pdo = $this->getPdo();
         $res = $this->getKeysAndValsStrings($data);
-        $prepareText = 'INSERT INTO ' . $TableName . ' (' . $res['key'] . ') VALUES (' . $res['val'] . ')';
+        $prepareText = 'INSERT INTO ' . $tableName . ' (' . $res['key'] . ') VALUES (' . $res['val'] . ')';
         $query = $pdo->prepare($prepareText);
         $query->execute();
     }
 
-    // update($data, $identifier, $TableName)
-    public function update($data, $identifier, $TableName) {
+    // update($data, $identifier, $tableName)
+    public function update($data, $identifier, $tableName) {
         $pdo = $this->getPdo();
         $paramsStr = $this->getUpdateParameterStrings($data);
         $identifierStr = $this->getUpdateParameterStrings($identifier, true);
-        $prepareText = 'UPDATE ' . $TableName . ' SET ' . $paramsStr . ' WHERE ' . $identifierStr;
+        $prepareText = 'UPDATE ' . $tableName . ' SET ' . $paramsStr . ' WHERE ' . $identifierStr;
         $query = $pdo->prepare($prepareText);
         $query->execute();
     }
 
-    // delete($identifier, $TableName)
-    public function delete($identifier, $TableName) {
+    // delete($identifier, $tableName)
+    public function delete($identifier, $tableName) {
         $pdo = $this->getPdo();
         $identifierStr = $this->getUpdateParameterStrings($identifier, true);
-        $prepareText = 'DELETE FROM ' . $TableName . ' WHERE ' . $identifierStr;
+        $prepareText = 'DELETE FROM ' . $tableName . ' WHERE ' . $identifierStr;
         $query = $pdo->prepare($prepareText);
         $query->execute();
     }
