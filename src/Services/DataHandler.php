@@ -43,7 +43,6 @@ class DataHandler {
         $paramsStr = $this->getUpdateParameterStrings($data);
         $identifierStr = $this->getUpdateParameterStrings($identifier, true);
         $prepareText = 'UPDATE ' . $TableName . ' SET ' . $paramsStr . ' WHERE ' . $identifierStr;
-        var_dump($prepareText);
         $query = $pdo->prepare($prepareText);
         $query->execute();
     }
